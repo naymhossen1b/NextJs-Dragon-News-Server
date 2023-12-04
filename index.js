@@ -37,7 +37,7 @@ async function run() {
     // get specific news
     app.get("/news/:id", async (req, res) => {
       const id = req.params.id;
-      const news = await newsCollection.findOne({ _id: ObjectId(id) });
+      const news = await newsCollection.findOne({ _id: new ObjectId(id) });
       res.send({ status: true, message: "success", data: news });
     });
 
