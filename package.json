@@ -1,0 +1,18 @@
+{
+  "name": "dragon-news-server",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "author": "Naym Hossen",
+  "scripts": {
+    "start": "node index.js",
+    "dev": "nodemon index.js"
+  },
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^16.3.1",
+    "express": "^4.18.2",
+    "mongodb": "^6.3.0",
+    "nodemon": "^3.0.2"
+  }
+}
